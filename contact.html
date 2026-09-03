@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Booking | Samero Logistics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="logo">SAMERO <span>LOGISTICS</span></a>
+    <nav class="desktop-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="corporate.html">Corporate</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta"><a href="tel:09073222216" class="btn btn-outline">090-7322-2216</a></div>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="tag-line">Reservation & Enquiry</span>
+    <h1>Request a Booking</h1>
+    <p>Complete the specification details below to submit your executive transportation enquiry.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap" style="max-width: 720px;">
+    <div class="form-card">
+      <form id="bookingForm">
+        <div class="field-row">
+          <div class="field">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" required placeholder="e.g. Dr. Okon Effiong">
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" required placeholder="090-0000-0000">
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="name@company.com">
+          </div>
+          <div class="field">
+            <label for="serviceType">Service Required</label>
+            <select id="serviceType">
+              <option value="Luxury Car Rental">Luxury Car Rental</option>
+              <option value="Executive Car Hiring">Executive Car Hiring</option>
+              <option value="Chauffeur Services">Chauffeur Services</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="preferredVehicle">Preferred Vehicle Tier</label>
+          <select id="preferredVehicle">
+            <option value="Executive Sedan">Executive Sedan</option>
+            <option value="Luxury SUV">Luxury SUV</option>
+            <option value="VIP Escort">VIP Escort</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="pickup">Pickup Location</label>
+            <input type="text" id="pickup" placeholder="Uyo / Location">
+          </div>
+          <div class="field">
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" placeholder="Destination address">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="notes">Additional Requirements</label>
+          <textarea id="notes" rows="3" placeholder="Duration, itinerary details, chauffeur requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block">Submit Booking Request</button>
+      </form>
+
+      <div id="formResponse" style="display: none; text-align: center; padding: 30px 0;">
+        <h3 style="color: var(--gold); margin-bottom: 12px;">Booking Request Received</h3>
+        <p style="color: var(--text-muted);">Thank you. Samero Logistics will review your request and contact you shortly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year"></span> Samero Logistics. Physical Location: 31 Obio Imo Street, Uyo, Akwa Ibom State.</p>
+  </div>
+</footer>
+
+<div class="mobile-sticky-bar">
+  <a href="tel:09073222216" class="btn btn-outline">Call Now</a>
+  <a href="contact.html" class="btn btn-gold">Request Booking</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
